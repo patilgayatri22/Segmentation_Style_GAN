@@ -1,1 +1,1 @@
-#Segmentation Style GAN
+# Segmentation Style GAN
