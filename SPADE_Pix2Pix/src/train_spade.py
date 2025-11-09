@@ -75,8 +75,8 @@ if __name__ == "__main__":
     seed_all()
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
-    DATA_TRAIN = Path("data/raw/train/train")
-    DATA_VAL = Path("data/raw/test/test")
+    DATA_TRAIN = Path("data/train/train")
+    DATA_VAL = Path("data/test/test")
 
     train_loader = torch.utils.data.DataLoader(
         SideBySideDataset(DATA_TRAIN, True), batch_size=8, shuffle=True, num_workers=4, pin_memory=True, drop_last=True
